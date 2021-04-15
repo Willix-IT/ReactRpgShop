@@ -4,8 +4,8 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import { Switch, Route } from "react-router-dom";
 import { makeStyles } from '@material-ui/core/styles';
 import SideBar from './SideBar'
-import background from '../../Medias/dirtTexture.png'
-import ItemCard from '../ItemCard';
+import background from '../../Medias/plankTexture.png'
+import ShopContainer from '../../Components/Shop/ShopContainer'
 export default function Layout() {
 
     const useStyles = makeStyles((theme) => ({
@@ -31,19 +31,9 @@ export default function Layout() {
             <SideBar />
             <main className={classes.content}>
                 <div className={classes.appBarSpacer} />
-                <div style={{display: 'flex', flexWrap: 'wrap'}}>
-                <ItemCard></ItemCard>
-                <ItemCard></ItemCard>
-                <ItemCard></ItemCard>
-                <ItemCard></ItemCard>
-                <ItemCard></ItemCard>
-                <ItemCard></ItemCard>
-                <ItemCard></ItemCard>
-                <ItemCard></ItemCard>
-                </div>
-                <ItemCard></ItemCard>
+
                     <Switch>
-                        {/* <Route exact path='/' /> */}
+                        <Route exact path='/' component={ShopContainer}/> 
                         {/* <Route exact path='/building' component={Buildings}/>
                         <Route exact path='/building/:id' component={BuildingDetails}/>
                         <Route exact path='/union/:id' component={UnionDetails}/>

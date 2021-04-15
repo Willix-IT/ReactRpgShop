@@ -18,7 +18,7 @@ import PowerSettingsNewOutlinedIcon from '@material-ui/icons/PowerSettingsNewOut
 import SendIcon from '@material-ui/icons/Send';
 import { Link } from "react-router-dom";
 import "nes.css/css/nes.min.css";
-import background from '../../Medias/grassTexture.png'
+import background from '../../Medias/woodlogTexture.jpg'
 
 import {PreferenceContext} from '../../Contexts/PreferenceContext'
 
