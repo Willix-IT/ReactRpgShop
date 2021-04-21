@@ -34,18 +34,6 @@ export default function Layout() {
 
                     <Switch>
                         <Route exact path='/' component={ShopContainer}/> 
-                        {/* <Route exact path='/building' component={Buildings}/>
-                        <Route exact path='/building/:id' component={BuildingDetails}/>
-                        <Route exact path='/union/:id' component={UnionDetails}/>
-                        <Route exact path='/invoices/' component={Invoices}/>
-                        <Route exact path='/payment/:id' component={Payment}/>
-                        <Route exact path='/invoice/:id' component={Invoice}/>
-                        <Route exact path='/products/' component={Products}/>
-                        <Route exact path='/allUnions/' component={AllUnions}/>
-                        <Route exact path='/allBuildings/' component={AllBuildings}/>
-                        <Route exact path='/allUnpaidInvoices/' component={AllUnpaidInvoices}/>
-                        <Route exact path='/paymentExport' component={ExportPayment}/>
-                        <Route exact path='/comptaExport' component={ExportCompta}/> */}
                     </Switch>
                
             </main>

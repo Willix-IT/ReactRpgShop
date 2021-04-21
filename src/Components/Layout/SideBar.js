@@ -159,45 +159,6 @@ export default function MiniDrawer() {
           </IconButton>
         </div>
         <Divider />
-        {/* <MenuList>
-          {sideBarItem("", <DashboardIcon />, "Dashboard", false)}
-          {sideBarItem(
-            "invoices",
-            <ArchiveRoundedIcon />,
-            "Outil Facturation",
-            false
-          )}
-          {sideBarItem(
-            "AllUnions",
-            <AccountBalanceIcon />,
-            "Suivi Syndics",
-            false
-          )}
-          {sideBarItem(
-            "AllBuildings",
-            <HouseIcon />, 
-            "Suivi Immeubles", 
-            false)}
-          {sideBarItem(
-            "allUnpaidInvoices",
-            <EuroSymbolRoundedIcon />,
-            "Factures Impayées",
-            false
-          )}
-          {sideBarItem(
-            "creditNotesTool",
-            <EuroSymbolRoundedIcon />,
-            "Outil Avoirs",
-            false
-          )}
-          {sideBarItem(
-            "payment",
-            <EuroSymbolRoundedIcon />,
-            "Outil Règlement",
-            false
-          )}
-           
-        </MenuList> */}
       </Drawer>
     </>
   );
