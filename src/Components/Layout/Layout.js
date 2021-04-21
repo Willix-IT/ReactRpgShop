@@ -18,7 +18,7 @@ export default function Layout() {
         flexGrow: 1,
         backgroundImage: `url(${background})`,
         backgroundRepeat: 'repeat',
-        height: '100vh'
+        height: '100%'
         },
         
     }));

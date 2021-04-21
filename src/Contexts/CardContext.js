@@ -1,5 +1,4 @@
 import React from 'react'
-
 const CardContext = React.createContext();
 const localState = JSON.parse(localStorage.getItem('cardState'));
 
@@ -12,13 +11,22 @@ const initialState = {
             quantity: 2,
             tva: 0.12,
             price: 10
+        },
+        {
+            id: 3,
+            name:"Charlemagne’s Joyeuse",
+            image:"/sword1.png",
+            quantity: 5,
+            tva: 0.12,
+            price: 14
         }
+
     ]
 }
 
 function sampleReducer(state, action) {
     switch (action.type) {
-        case 'updateSample': {
+        case 'updateCard': {
             return {
                 ...state,
                 selectedCard: action.payload,
