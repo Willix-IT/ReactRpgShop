@@ -6,30 +6,55 @@ const initialState = {
     selectedCard: [
         {
             id: 4,
-            name:"Excalibur",
-            image:"/sword1.png",
+            name: "Excalibur",
+            image: "/sword1.png",
             quantity: 2,
             tva: 0.12,
             price: 10
         },
         {
             id: 3,
-            name:"Charlemagne’s Joyeuse",
-            image:"/sword1.png",
+            name: "Charlemagne’s Joyeuse",
+            image: "/sword1.png",
             quantity: 5,
             tva: 0.12,
             price: 14
         }
 
-    ]
+    ],
+    carcCategory: 'all'
 }
 
 function sampleReducer(state, action) {
     switch (action.type) {
         case 'updateCard': {
+
+            const temp = state.selectedCard
+            const check = temp.filter(i => i.id === action.payload.id)
+
+            if (check.length !== 0) {
+                check[0].quantity += 1
+            }
+            else {
+                temp.push({
+                    id: action.payload.id,
+                    name: action.payload.name,
+                    image: action.payload.img,
+                    quantity: 1,
+                    tva: action.payload.tva,
+                    price: action.payload.price
+                })
+            }
+
             return {
                 ...state,
-                selectedCard: action.payload,
+                selectedCard: temp
+            }
+        }
+        case 'updateCategory': {
+            return {
+                ...state,
+                cardCategory: action.payload,
             }
         }
         case 'setRefreshTable': {

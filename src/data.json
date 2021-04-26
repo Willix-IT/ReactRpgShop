@@ -1,0 +1,190 @@
+{
+    "Rings": [
+        {
+            "id": 1,
+            "name": "Ring 1",
+            "price": 10,
+            "tva": 0.2,
+            "description": "Lorem ipsum",
+            "image": "image1.png",
+            "quantity": 0
+        },
+        {
+            "id": 2,
+            "name": "Ring 2",
+            "price": 10,
+            "tva": 0.2,
+            "description": "Lorem ipsum",
+            "image": "ring2.png",
+            "quantity": 0
+        },
+        {
+            "id": 1,
+            "name": "Ring 1",
+            "price": 10,
+            "tva": 0.2,
+            "description": "Lorem ipsum",
+            "image": "image1.png",
+            "quantity": 0
+        },
+        {
+            "id": 1,
+            "name": "Ring 1",
+            "price": 10,
+            "tva": 0.2,
+            "description": "Lorem ipsum",
+            "image": "image1.png",
+            "quantity": 0
+        },
+        {
+            "id": 1,
+            "name": "Ring 1",
+            "price": 10,
+            "tva": 0.2,
+            "description": "Lorem ipsum",
+            "image": "image1.png",
+            "quantity": 0
+        }  
+    ],
+    "Swords": [
+        {
+            "id": 1,
+            "name": "Ring 1",
+            "price": 10,
+            "tva": 0.2,
+            "description": "Lorem ipsum",
+            "image": "image1.png",
+            "quantity": 0
+        },
+        {
+            "id": 1,
+            "name": "Ring 1",
+            "price": 10,
+            "tva": 0.2,
+            "description": "Lorem ipsum",
+            "image": "image1.png",
+            "quantity": 0
+        },
+        {
+            "id": 1,
+            "name": "Ring 1",
+            "price": 10,
+            "tva": 0.2,
+            "description": "Lorem ipsum",
+            "image": "image1.png",
+            "quantity": 0
+        },
+        {
+            "id": 1,
+            "name": "Ring 1",
+            "price": 10,
+            "tva": 0.2,
+            "description": "Lorem ipsum",
+            "image": "image1.png",
+            "quantity": 0
+        },
+        {
+            "id": 1,
+            "name": "Ring 1",
+            "price": 10,
+            "tva": 0.2,
+            "description": "Lorem ipsum",
+            "image": "image1.png",
+            "quantity": 0
+        }
+    ],
+    "Armor": [
+        {
+            "id": 1,
+            "name": "Ring 1",
+            "price": 10,
+            "tva": 0.2,
+            "description": "Lorem ipsum",
+            "image": "image1.png",
+            "quantity": 0
+        },
+        {
+            "id": 1,
+            "name": "Ring 1",
+            "price": 10,
+            "tva": 0.2,
+            "description": "Lorem ipsum",
+            "image": "image1.png",
+            "quantity": 0
+        },
+        {
+            "id": 1,
+            "name": "Ring 1",
+            "price": 10,
+            "tva": 0.2,
+            "description": "Lorem ipsum",
+            "image": "image1.png",
+            "quantity": 0
+        },
+        {
+            "id": 1,
+            "name": "Ring 1",
+            "price": 10,
+            "tva": 0.2,
+            "description": "Lorem ipsum",
+            "image": "image1.png",
+            "quantity": 0
+        },
+        {
+            "id": 1,
+            "name": "Ring 1",
+            "price": 10,
+            "tva": 0.2,
+            "description": "Lorem ipsum",
+            "image": "image1.png",
+            "quantity": 0
+        }
+    ],
+    "Pets": [
+        {
+            "id": 1,
+            "name": "Ring 1",
+            "price": 10,
+            "tva": 0.2,
+            "description": "Lorem ipsum",
+            "image": "image1.png",
+            "quantity": 0
+        },
+        {
+            "id": 1,
+            "name": "Ring 1",
+            "price": 10,
+            "tva": 0.2,
+            "description": "Lorem ipsum",
+            "image": "image1.png",
+            "quantity": 0
+        },
+        {
+            "id": 1,
+            "name": "Ring 1",
+            "price": 10,
+            "tva": 0.2,
+            "description": "Lorem ipsum",
+            "image": "image1.png",
+            "quantity": 0
+        },
+        {
+            "id": 1,
+            "name": "Ring 1",
+            "price": 10,
+            "tva": 0.2,
+            "description": "Lorem ipsum",
+            "image": "image1.png",
+            "quantity": 0
+        },
+        {
+            "id": 1,
+            "name": "Ring 1",
+            "price": 10,
+            "tva": 0.2,
+            "description": "Lorem ipsum",
+            "image": "image1.png",
+            "quantity": 0
+        }
+    ]
+}

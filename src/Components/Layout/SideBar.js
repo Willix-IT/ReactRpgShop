@@ -8,7 +8,7 @@ import DashboardIcon from "@material-ui/icons/Dashboard";
 import Drawer from "@material-ui/core/Drawer";
 import Divider from "@material-ui/core/Divider";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
-import background from '../../Medias/woodlogTexture.jpg'
+import background from '../../Medias/woodlogTexturerotated.jpg'
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 import IconButton from "@material-ui/core/IconButton";
@@ -17,6 +17,7 @@ import ControlPointRoundedIcon from "@material-ui/icons/ControlPointRounded";
 import EuroSymbolRoundedIcon from "@material-ui/icons/EuroSymbolRounded";
 import AccountBalanceIcon from "@material-ui/icons/AccountBalance";
 import { PreferenceContext } from "../../Contexts/PreferenceContext";
+import { CardContext } from "../../Contexts/CardContext"
 import HouseIcon from '@material-ui/icons/House';
 
 const drawerWidth = 240;
@@ -59,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
     }),
     backgroundImage: `url(${background})`,
     backgroundRepeat: 'repeat',
-    backgroundSize: '200px 200px'
+    backgroundSize: '300px 200px'
   },
   drawerClose: {
     transition: theme.transitions.create("width", {
@@ -73,7 +74,7 @@ const useStyles = makeStyles((theme) => ({
     },
     backgroundImage: `url(${background})`,
     backgroundRepeat: 'repeat',
-    backgroundSize: '200px 200px'
+    backgroundSize: '300px 200px'
   },
   toolbar: {
     display: "flex",
@@ -159,6 +160,13 @@ export default function MiniDrawer() {
           </IconButton>
         </div>
         <Divider />
+        <MenuList style={{marginTop: '100px', marginLeft: '5px', padding:'2px'}}>
+          {sideBarItem("all", <AccountBalanceIcon/>, "All", false)}
+          {sideBarItem("rings", <AccountBalanceIcon/>, "Rings", false)}
+          {sideBarItem("swords", <AccountBalanceIcon/>, "Swords", false)}
+          {sideBarItem("armors", <AccountBalanceIcon/>, "Armors", false)}
+          {sideBarItem("pets", <AccountBalanceIcon/>, "Pets", false)}
+        </MenuList>
       </Drawer>
     </>
   );

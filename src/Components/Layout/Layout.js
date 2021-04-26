@@ -33,7 +33,7 @@ export default function Layout() {
                 <div className={classes.appBarSpacer} />
 
                     <Switch>
-                        <Route exact path='/' component={ShopContainer}/> 
+                        <Route exact path='/:sort' component={ShopContainer}/> 
                     </Switch>
                
             </main>

@@ -6,7 +6,7 @@ import { CardContext } from "../../Contexts/CardContext";
 const useStyles = makeStyles((theme) => ({
   card: {
     width: "200px",
-    height: "50vh",
+    height: "42vh",
     backgroundColor: "#fff",
     borderRadius: "50px",
     marginLeft: "8vh",
@@ -53,14 +53,11 @@ const useStyles = makeStyles((theme) => ({
 export default function ItemCard(props) {
   const classes = useStyles();
 
-  const { CardDispatch } = React.useContext(CardContext);
+  const { cardDispatch } = React.useContext(CardContext);
 
 
-  const addToCard = (id) => {
-      CardDispatch({ type: "updateCard", payload:{
-
-      }})
-    console.log("test", id);
+  const addToCard = () => {
+    cardDispatch({type: 'updateCard', payload: props})
   };
 
   return (
@@ -86,11 +83,11 @@ export default function ItemCard(props) {
       </div>
       <div className={classes.buttonContainer}>
         <button
-          onClick={() => addToCard(props.id)}
+          onClick={() => addToCard()}
           type="button"
           class="nes-btn is-primary"
         >
-          Add to my card
+          Add to cart
         </button>
       </div>
     </div>
