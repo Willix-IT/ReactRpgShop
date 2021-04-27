@@ -6,7 +6,7 @@ import { CardContext } from "../../Contexts/CardContext";
 const useStyles = makeStyles((theme) => ({
   card: {
     width: "200px",
-    height: "42vh",
+    height: "50vh",
     backgroundColor: "#fff",
     borderRadius: "50px",
     marginLeft: "8vh",
@@ -58,6 +58,7 @@ export default function ItemCard(props) {
 
   const addToCard = () => {
     cardDispatch({type: 'updateCard', payload: props})
+    window.location.reload()
   };
 
   return (
@@ -67,7 +68,7 @@ export default function ItemCard(props) {
       </div>
       <div className={classes.textContainer}>
         <h2>{props.name}</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>{props.description}</p>
       </div>
       <div className={classes.iconsContainer}>
         <i class="nes-icon is-small heart"></i>
@@ -79,7 +80,7 @@ export default function ItemCard(props) {
         <i class="nes-icon is-small is-transparent  star"></i>
       </div>
       <div className={classes.priceContainer}>
-          <p>Prix : <strong>{(props.price + props.price * props.tva).toFixed(2)} €</strong></p>
+          <p>Price : <strong>{(props.price + props.price * props.tva).toFixed(2)} €</strong></p>
       </div>
       <div className={classes.buttonContainer}>
         <button

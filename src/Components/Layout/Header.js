@@ -4,19 +4,10 @@ import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Shop from '../../Medias/shop.png'
-import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import { withStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
-import MenuItem from '@material-ui/core/MenuItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import LibraryBooksOutlinedIcon from '@material-ui/icons/LibraryBooksOutlined';
-import PowerSettingsNewOutlinedIcon from '@material-ui/icons/PowerSettingsNewOutlined';
-import SendIcon from '@material-ui/icons/Send';
-import { Link } from "react-router-dom";
 import "nes.css/css/nes.min.css";
 import background from '../../Medias/woodlogTexture.jpg'
 
@@ -189,47 +180,6 @@ export default function MiniDrawer() {
               <img src={Shop}></img>
           </div>
           <div>
-      {/* <Button
-        aria-controls="customized-menu"
-        aria-haspopup="true"
-        variant="contained"
-        className={classes.button}
-        onClick={handleClick}
-      >
-        Temp
-      </Button> */}
-      {/* <StyledMenu
-        id="customized-menu"
-        anchorEl={anchorEl}
-        keepMounted
-        open={Boolean(anchorEl)}
-        onClose={handleClose}
-      >
-        <MenuItem component={Link} to={"/products"} onClick={handleClose}>
-          <ListItemIcon>
-            <SendIcon fontSize="small" style={{color: '#3f51b5'}}/>
-          </ListItemIcon>
-          <ListItemText primary="Gestion des produits" />
-        </MenuItem>
-        <MenuItem component={Link} to={"/paymentExport"} onClick={handleClose}>
-          <ListItemIcon>
-            <LibraryBooksOutlinedIcon fontSize="small" style={{color: '#3f51b5'}}/>
-          </ListItemIcon>
-          <ListItemText primary="Export Paiements" />
-        </MenuItem>
-        <MenuItem component={Link} to={"/comptaExport"} onClick={handleClose}>
-          <ListItemIcon>
-            <LibraryBooksOutlinedIcon fontSize="small" style={{color: '#3f51b5'}}/>
-          </ListItemIcon>
-          <ListItemText primary="Export Comptabilité" />
-        </MenuItem>
-        <MenuItem onClick={handleLogOut}>
-          <ListItemIcon>
-            <PowerSettingsNewOutlinedIcon fontSize="small" style={{color: '#3f51b5'}}/>
-          </ListItemIcon>
-          <ListItemText primary="Se déconnecter" />
-        </MenuItem>
-      </StyledMenu> */}
     </div>
         </Toolbar>
       </AppBar>

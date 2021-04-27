@@ -2,7 +2,6 @@ import React from 'react'
 import ItemCard from '../Shop/ItemCard';
 import InfoCard from '../Shop/InfoCard';
 import { useParams } from "react-router-dom";
-import { makeStyles } from '@material-ui/core/styles';
 import data from '../../data.json'
 
 

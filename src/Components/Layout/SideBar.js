@@ -13,12 +13,14 @@ import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 import IconButton from "@material-ui/core/IconButton";
 import ControlPointRoundedIcon from "@material-ui/icons/ControlPointRounded";
- import ArchiveRoundedIcon from "@material-ui/icons/ArchiveRounded";
-import EuroSymbolRoundedIcon from "@material-ui/icons/EuroSymbolRounded";
+import AllInclusiveIcon from '@material-ui/icons/AllInclusive';
+import AllOutIcon from '@material-ui/icons/AllOut';
+import InvertColorsIcon from '@material-ui/icons/InvertColors';
+import SecurityIcon from '@material-ui/icons/Security';
+import PetsIcon from '@material-ui/icons/Pets';
 import AccountBalanceIcon from "@material-ui/icons/AccountBalance";
 import { PreferenceContext } from "../../Contexts/PreferenceContext";
-import { CardContext } from "../../Contexts/CardContext"
-import HouseIcon from '@material-ui/icons/House';
+
 
 const drawerWidth = 240;
 
@@ -161,11 +163,11 @@ export default function MiniDrawer() {
         </div>
         <Divider />
         <MenuList style={{marginTop: '100px', marginLeft: '5px', padding:'2px'}}>
-          {sideBarItem("all", <AccountBalanceIcon/>, "All", false)}
-          {sideBarItem("rings", <AccountBalanceIcon/>, "Rings", false)}
-          {sideBarItem("swords", <AccountBalanceIcon/>, "Swords", false)}
-          {sideBarItem("armors", <AccountBalanceIcon/>, "Armors", false)}
-          {sideBarItem("pets", <AccountBalanceIcon/>, "Pets", false)}
+          {sideBarItem("all", <AllInclusiveIcon/>, "All", false)}
+          {sideBarItem("rings", <AllOutIcon/>, "Rings", false)}
+          {sideBarItem("swords", <InvertColorsIcon/>, "Swords", false)}
+          {sideBarItem("armors", <SecurityIcon/>, "Armors", false)}
+          {sideBarItem("pets", <PetsIcon/>, "Pets", false)}
         </MenuList>
       </Drawer>
     </>

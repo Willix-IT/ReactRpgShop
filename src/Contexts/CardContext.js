@@ -4,22 +4,6 @@ const localState = JSON.parse(localStorage.getItem('cardState'));
 
 const initialState = {
     selectedCard: [
-        {
-            id: 4,
-            name: "Excalibur",
-            image: "/sword1.png",
-            quantity: 2,
-            tva: 0.12,
-            price: 10
-        },
-        {
-            id: 3,
-            name: "Charlemagne’s Joyeuse",
-            image: "/sword1.png",
-            quantity: 5,
-            tva: 0.12,
-            price: 14
-        }
 
     ],
     carcCategory: 'all'

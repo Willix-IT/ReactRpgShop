@@ -43,12 +43,19 @@ export default function InfoCard() {
   const [body, setBody] = React.useState(null);
   const [refreshTable, setRefreshTable] = React.useState(true);
   const [total, setTotal] = React.useState(0);
+  const [checkLength, setCheckLength] = React.useState(true)
 
+
+  const removeStorage = () => {
+    localStorage.removeItem('cardState');
+    window.location.reload()
+  }
   React.useEffect(() => {
     if (refreshTable) {
       let totalCard = 0;
       //map le contenu du panier
       let content = cardState.selectedCard.map((item, index) => (
+        index < 3 && checkLength ? 
         <div className={classes.itemContainer} key={index}>
           <div className={classes.imageItem}>
             <img
@@ -58,36 +65,43 @@ export default function InfoCard() {
           </div>
           <div className={classes.infoContainer}>
             <h3>{item.name}</h3>
-            <p>Quantité : {item.quantity}</p>
-            <p>Prix à l'unité : {item.price * item.tva + item.price} €</p>
+            <p>Quantity : {item.quantity}</p>
+            <p>Unit Price : {item.price * item.tva + item.price} €</p>
             <p>
-              Prix à total :{" "}
+              Total Price :{" "}
               {(item.price * item.tva + item.price) * item.quantity} €
             </p>
           </div>
         </div>
+        :
+        setCheckLength(false)
       ));
       //map le total
       cardState.selectedCard.map(
         (item, index) =>
-          (totalCard =
-            totalCard +
-            (total + (item.price * item.tva + item.price) * item.quantity))
+        (totalCard =
+          totalCard +
+          (total + (item.price * item.tva + item.price) * item.quantity))
       );
       setTotal(totalCard.toFixed(2));
       setBody(content);
+      
       setRefreshTable(false);
     }
-  }, [cardState, refreshTable, body]);
+  }, [cardState.selectedCard, refreshTable, body]);
 
   return (
     <div className={classes.card}>
       <div className={classes.containerTitle}>
-        <h1>MY CARD</h1>
+        <h1>MY CART</h1>
       </div>
       {body}
+      {checkLength === false ? <div className={classes.containerTotal}><h2>Other items in your cart</h2></div> : null}
       <div className={classes.containerTotal}>
-        <h2>Total : {total}</h2>
+        <h2>Total : {total} €</h2>
+      </div>
+      <div style={{display:'flex', justifyContent:'space-around'}}>
+      <button type="button" class="nes-btn is-warning" onClick={() => removeStorage()} style={{margin:'auto'}}>Delete Cart</button>
       </div>
     </div>
   );
